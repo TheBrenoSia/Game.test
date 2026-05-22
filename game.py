@@ -2,11 +2,11 @@ import random
 import time
 
 print("=" * 40)
-print("🔥 BATALHA CONTRA O BUG 🔥")
+print("🔥 BATALHA DEV CONTRA O BUG 🔥")
 print("=" * 40)
 
 vida_jogador = 100
-vida_bug = 80
+vida_bug = 120
 
 ataques = {
     "1": ("Código Limpo", 18),
@@ -27,7 +27,7 @@ while vida_jogador > 0 and vida_bug > 0:
     escolha = input(">> ")
 
     if escolha not in ataques:
-        print("Você apertou algo inválido. Impressionante.")
+        print("Você apertou algo inválido.")
         continue
 
     nome_ataque, dano = ataques[escolha]
@@ -61,4 +61,4 @@ while vida_jogador > 0 and vida_bug > 0:
 
 if vida_jogador <= 0:
     print("\n💀 Você morreu.")
-    print("O bug foi para produção. Milhões sofrerão.")
+    print("O bug foi para produção.")
